@@ -340,7 +340,7 @@
               <MiscControls>--no-multibyte-chars</MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xB</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Dri;../Int;../Lib</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Dri;../Int;../Lib;..\MyTasks</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -760,6 +760,36 @@
               <FileName>multi_button.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\Lib\multi_button.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>MyTasks</GroupName>
+          <Files>
+            <File>
+              <FileName>MyTasks.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\MyTasks\MyTasks.h</FilePath>
+            </File>
+            <File>
+              <FileName>task02.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MyTasks\task02.c</FilePath>
+            </File>
+            <File>
+              <FileName>task03.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MyTasks\task03.c</FilePath>
+            </File>
+            <File>
+              <FileName>task04.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MyTasks\task04.c</FilePath>
+            </File>
+            <File>
+              <FileName>task05.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MyTasks\task05.c</FilePath>
             </File>
           </Files>
         </Group>
