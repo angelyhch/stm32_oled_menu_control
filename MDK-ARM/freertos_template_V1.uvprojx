@@ -340,7 +340,7 @@
               <MiscControls>--no-multibyte-chars</MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xB</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;..\Dri;..\Int</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -670,6 +670,46 @@
               <FileName>port.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Dri</GroupName>
+          <Files>
+            <File>
+              <FileName>Dri_MYI2C.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Dri\Dri_MYI2C.c</FilePath>
+            </File>
+            <File>
+              <FileName>Dri_MYI2C.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Dri\Dri_MYI2C.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Int</GroupName>
+          <Files>
+            <File>
+              <FileName>Int_OLED.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Int\Int_OLED.c</FilePath>
+            </File>
+            <File>
+              <FileName>Int_OLED.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Int\Int_OLED.h</FilePath>
+            </File>
+            <File>
+              <FileName>Int_OLED_Data.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Int\Int_OLED_Data.c</FilePath>
+            </File>
+            <File>
+              <FileName>Int_OLED_Data.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Int\Int_OLED_Data.h</FilePath>
             </File>
           </Files>
         </Group>

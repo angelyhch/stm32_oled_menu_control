@@ -25,7 +25,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "Int_OLED.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -114,6 +114,12 @@ void MX_FREERTOS_Init(void)
 void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
+  OLED_Init();
+  OLED_ShowString(0, 0, "hello world", OLED_8X16);
+  OLED_ShowString(0, 16, "hello world", OLED_8X16);
+  OLED_ShowString(0, 32, "hello world", OLED_8X16);
+  OLED_ShowString(0, 48, "hello world", OLED_8X16);
+  OLED_Update();
   /* Infinite loop */
   for (;;)
   {
