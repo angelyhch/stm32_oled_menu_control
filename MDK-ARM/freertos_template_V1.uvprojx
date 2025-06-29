@@ -340,7 +340,7 @@
               <MiscControls>--no-multibyte-chars</MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xB</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;..\Dri;..\Int</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Dri;../Int</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -710,6 +710,16 @@
               <FileName>Int_OLED_Data.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\Int\Int_OLED_Data.h</FilePath>
+            </File>
+            <File>
+              <FileName>Int_LED.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Int\Int_LED.c</FilePath>
+            </File>
+            <File>
+              <FileName>Int_LED.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Int\Int_LED.h</FilePath>
             </File>
           </Files>
         </Group>

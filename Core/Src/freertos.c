@@ -25,6 +25,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "Int_LED.h"
 #include "Int_OLED.h"
 /* USER CODE END Includes */
 
@@ -123,6 +124,10 @@ void StartDefaultTask(void *argument)
   /* Infinite loop */
   for (;;)
   {
+    // LED_Toggle(LED1);
+    // LED_Toggle(LED2);
+    LED_Toggle(LED3);
+    LED_Toggle(LED4);
     HAL_GPIO_WritePin(LED_PC13_GPIO_Port, LED_PC13_Pin, GPIO_PIN_SET);
     osDelay(3000);
     HAL_GPIO_WritePin(LED_PC13_GPIO_Port, LED_PC13_Pin, GPIO_PIN_RESET);
