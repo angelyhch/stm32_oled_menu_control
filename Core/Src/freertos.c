@@ -120,6 +120,7 @@ void StartDefaultTask(void *argument)
     HAL_GPIO_WritePin(LED_PC13_GPIO_Port, LED_PC13_Pin, GPIO_PIN_SET);
     osDelay(3000);
     HAL_GPIO_WritePin(LED_PC13_GPIO_Port, LED_PC13_Pin, GPIO_PIN_RESET);
+    printf("usart 重定向ok!\r\n");
     osDelay(500);
   }
   /* USER CODE END StartDefaultTask */
