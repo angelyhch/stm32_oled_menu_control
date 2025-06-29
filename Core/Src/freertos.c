@@ -27,6 +27,7 @@
 /* USER CODE BEGIN Includes */
 #include "Int_LED.h"
 #include "Int_OLED.h"
+#include "Int_KEY.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -116,6 +117,9 @@ void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
   OLED_Init();
+  Key_Init();
+  /* USER CODE END StartDefaultTask */
+
   OLED_ShowString(0, 0, "hello world", OLED_8X16);
   OLED_ShowString(0, 16, "hello world", OLED_8X16);
   OLED_ShowString(0, 32, "hello world", OLED_8X16);
@@ -124,14 +128,28 @@ void StartDefaultTask(void *argument)
   /* Infinite loop */
   for (;;)
   {
+
+    if (Key_GetState(KEY2, KEY_STATE_SINGLE))
+    {
+      LED_On(LED1);
+      LED_Off(LED2);
+      Key_ResetState(KEY2, KEY_STATE_SINGLE);
+    }
+    if (Key_GetState(KEY2, KEY_STATE_DOUBLE))
+    {
+      LED_On(LED2);
+      LED_Off(LED1);
+      Key_ResetState(KEY2, KEY_STATE_DOUBLE);
+    }
+
     // LED_Toggle(LED1);
     // LED_Toggle(LED2);
-    LED_Toggle(LED3);
-    LED_Toggle(LED4);
-    HAL_GPIO_WritePin(LED_PC13_GPIO_Port, LED_PC13_Pin, GPIO_PIN_SET);
-    osDelay(3000);
-    HAL_GPIO_WritePin(LED_PC13_GPIO_Port, LED_PC13_Pin, GPIO_PIN_RESET);
-    printf("usart 重定向ok!\r\n");
+    // LED_Toggle(LED3);
+    // LED_Toggle(LED4);
+    // HAL_GPIO_WritePin(LED_PC13_GPIO_Port, LED_PC13_Pin, GPIO_PIN_SET);
+    // osDelay(3000);
+    // HAL_GPIO_WritePin(LED_PC13_GPIO_Port, LED_PC13_Pin, GPIO_PIN_RESET);
+    // printf("usart 重定向ok!\r\n");
     osDelay(500);
   }
   /* USER CODE END StartDefaultTask */

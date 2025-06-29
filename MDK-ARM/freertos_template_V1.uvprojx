@@ -340,7 +340,7 @@
               <MiscControls>--no-multibyte-chars</MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xB</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Dri;../Int</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Dri;../Int;../Lib</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -686,6 +686,16 @@
               <FileType>5</FileType>
               <FilePath>..\Dri\Dri_MYI2C.h</FilePath>
             </File>
+            <File>
+              <FileName>Dri_KEY.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Dri\Dri_KEY.c</FilePath>
+            </File>
+            <File>
+              <FileName>Dri_KEY.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Dri\Dri_KEY.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -720,6 +730,36 @@
               <FileName>Int_LED.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\Int\Int_LED.h</FilePath>
+            </File>
+            <File>
+              <FileName>Int_Key.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Int\Int_Key.c</FilePath>
+            </File>
+            <File>
+              <FileName>Int_Key.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Int\Int_Key.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Lib</GroupName>
+          <Files>
+            <File>
+              <FileName>dbg.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Lib\dbg.h</FilePath>
+            </File>
+            <File>
+              <FileName>multi_button.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Lib\multi_button.c</FilePath>
+            </File>
+            <File>
+              <FileName>multi_button.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Lib\multi_button.h</FilePath>
             </File>
           </Files>
         </Group>
