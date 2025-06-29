@@ -696,6 +696,16 @@
               <FileType>5</FileType>
               <FilePath>..\Dri\Dri_KEY.h</FilePath>
             </File>
+            <File>
+              <FileName>Dri_multitree_menu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Dri\Dri_multitree_menu.c</FilePath>
+            </File>
+            <File>
+              <FileName>Dri_multitree_menu.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Dri\Dri_multitree_menu.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
