@@ -5,6 +5,6 @@ void StartTask03(void *argument)
     for (;;)
     {
 
-        osDelay(5);
+        osDelay(1000);
     }
 }
