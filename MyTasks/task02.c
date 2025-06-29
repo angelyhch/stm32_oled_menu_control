@@ -8,17 +8,12 @@ void StartTask02(void *argument)
 {
     OLED_Init();
     Key_Init();
-    // OLED_ShowString(0, 0, "Hello World!", OLED_8X16);
+    OLED_ShowString(0, 0, "Hello World!", OLED_8X16);
     OLED_Update();
 
     for (;;)
     {
 
-        OLED_ShowNum(0, 0, key_state1, 4, OLED_8X16);
-        OLED_ShowNum(0, 16, key_state2, 4, OLED_8X16);
-        OLED_ShowNum(0, 32, key_state3, 4, OLED_8X16);
-        OLED_ShowNum(0, 48, key_state4, 4, OLED_8X16);
-        OLED_Update();
         if (Key_GetState(KEY1, KEY_STATE_SINGLE))
         {
             LED_On(LED1);
