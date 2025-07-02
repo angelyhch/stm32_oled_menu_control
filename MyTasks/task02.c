@@ -11,6 +11,7 @@ void StartTask02(void *argument)
 {
     OLED_Init();
     Key_Init();
+    LED_All_Off();
     Comp_OLED_Menu_Init();
 
     // OLED_ShowString(0, 48, "Hello World!", OLED_8X16);
