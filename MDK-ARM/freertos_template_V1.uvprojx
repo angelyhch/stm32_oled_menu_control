@@ -340,7 +340,7 @@
               <MiscControls>--no-multibyte-chars</MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xB</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Dri;../Int;../Lib;..\MyTasks</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Dri;../Int;../Lib;../MyTasks;../Comp</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -800,6 +800,31 @@
               <FileName>task05.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\MyTasks\task05.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Comp</GroupName>
+          <Files>
+            <File>
+              <FileName>Comp_OLED_Job.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Comp\Comp_OLED_Job.c</FilePath>
+            </File>
+            <File>
+              <FileName>Comp_OLED_Job.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Comp\Comp_OLED_Job.h</FilePath>
+            </File>
+            <File>
+              <FileName>Comp_OLED_Menu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Comp\Comp_OLED_Menu.c</FilePath>
+            </File>
+            <File>
+              <FileName>Comp_OLED_Menu.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Comp\Comp_OLED_Menu.h</FilePath>
             </File>
           </Files>
         </Group>

@@ -52,4 +52,7 @@ void free_tree(TreeNode *root);
 // 前序遍历多叉树
 void preorder_traversal(TreeNode *root);
 
+// 测试多叉树
+void test_find_node_by_id(void);
+void test_get_parent_id(void);
 #endif // !__MULTITREE__MENU__H_

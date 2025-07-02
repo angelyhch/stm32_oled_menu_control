@@ -226,7 +226,7 @@ static void dummy_action(void)
     // 空函数，仅用于测试
 }
 // 测试用例
-static void test_get_parent_id()
+void test_get_parent_id()
 {
     // 测试用例1: 最低半字节非零
     {
@@ -386,7 +386,7 @@ static void test_find_node_by_id_nested_match(void)
     free_tree(root);
 }
 
-static void test_find_node_by_id()
+void test_find_node_by_id()
 {
     test_find_node_by_id_empty_tree();
     test_find_node_by_id_root_match();
