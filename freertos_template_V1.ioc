@@ -2,9 +2,9 @@
 CAD.formats=
 CAD.pinconfig=
 CAD.provider=
-FREERTOS.FootprintOK=false
+FREERTOS.FootprintOK=true
 FREERTOS.IPParameters=Tasks01,FootprintOK,configTOTAL_HEAP_SIZE
-FREERTOS.Tasks01=defaultTask,24,128,StartDefaultTask,Default,NULL,Dynamic,NULL,NULL;myTask02,8,128,StartTask02,As weak,NULL,Dynamic,NULL,NULL;myTask03,8,128,StartTask03,As weak,NULL,Dynamic,NULL,NULL;myTask04,8,128,StartTask04,As weak,NULL,Dynamic,NULL,NULL;myTask05,8,128,StartTask05,As weak,NULL,Dynamic,NULL,NULL
+FREERTOS.Tasks01=defaultTask,24,128,StartDefaultTask,Default,NULL,Dynamic,NULL,NULL;myTask02,8,768,StartTask02,As weak,NULL,Dynamic,NULL,NULL;myTask03,8,128,StartTask03,As weak,NULL,Dynamic,NULL,NULL;myTask04,8,128,StartTask04,As weak,NULL,Dynamic,NULL,NULL;myTask05,8,128,StartTask05,As weak,NULL,Dynamic,NULL,NULL
 FREERTOS.configTOTAL_HEAP_SIZE=10240
 File.Version=6
 GPIO.groupedBy=Group By Peripherals
