@@ -57,6 +57,7 @@ void action_0x1220(void)
 {
     debug("action_0x1220\n");
     stop_led_blink_to_off(LED2);
+    change_led_blink_timer(LED2, 2000);
 }
 
 void action_0x1230(void)
