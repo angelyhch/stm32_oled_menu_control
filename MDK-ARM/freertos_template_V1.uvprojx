@@ -826,6 +826,11 @@
               <FileType>5</FileType>
               <FilePath>..\Comp\Comp_OLED_Menu.h</FilePath>
             </File>
+            <File>
+              <FileName>Comp_OLED_Menu_Data.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Comp\Comp_OLED_Menu_Data.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
