@@ -1,3 +1,4 @@
 MDK-ARM/**
 !MDK-ARM/freertos_template_V1.uvoptx
 !MDK-ARM/freertos_template_V1.uvprojx
+!MDK-ARM/startup_stm32f103xb.s
